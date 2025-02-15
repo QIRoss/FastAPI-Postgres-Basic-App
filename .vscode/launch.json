@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: FastAPI",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "main:app",
+                "--port",
+                "8000",
+                "--reload",
+                "--reload-dir",
+                ".",    
+                "--reload-dir",
+                "src"
+            ],
+            "jinja": true,
+            "envFile": ".env"
+        }
+    ]
+}
